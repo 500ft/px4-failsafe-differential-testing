@@ -56,9 +56,24 @@ quadrotor. Public-log firmware revisions and exclusions are reported separately.
 
 ![Sequence agreement before fixes, on development replay and on the separate fresh reserved corpus](results/figures/component-agreement.png)
 
-The panels use separate count scales. Each unit is a complete sequence;
-development replays reuse inputs. [Accessible counts and CSV](results/figures/tables.md#component-comparison)
-retain attempted, excluded and invalid denominators. The
+Sequence-level agreement between the Python model and the native PX4 failsafe
+class. Panels: (a) directed development, (b) random development, (c) fresh
+reserved corpus; each panel has its own count axis. A filled bar counts
+sequences on which the two agree; a hollow bar counts disagreements. Before
+the fixes: directed, 25 of 36 agreed and 11 disagreed; random, 1,005 of 1,500
+agreed and 495 disagreed. Replayed after the fixes: directed, 36 of 36 agreed;
+random, 1,500 of 1,500 agreed. Fresh reserved corpus after the fixes: 1,000 of
+1,000 agreed. Unit: one complete sequence. Development replays reuse inputs;
+the fresh corpus is separate from Study A confirmation. The generated cohorts
+had 0 invalid and 0 excluded sequences; 8 separate unsupported-input probes
+were rejected before either adapter. Corpus agreement only: RC loss, mode
+switching, pilot takeover and integrated behavior are excluded. Source:
+evidence/task-domain-2026-10-03/results.json. Values: tables.md and
+component-agreement.csv.
+
+[Caption file](results/figures/component-agreement.caption.md) ·
+[Accessible counts and CSV](results/figures/tables.md#component-comparison)
+with attempted, excluded and invalid denominators. The
 [domain packet](evidence/task-domain-2026-10-03/README.md) holds the mechanism
 breakdown and counterexamples.
 
