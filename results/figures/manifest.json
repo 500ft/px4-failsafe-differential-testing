@@ -2,20 +2,23 @@
   "generator": "scripts/plot_retained_results.py",
   "command": "python scripts/plot_retained_results.py",
   "matplotlib": "3.11.2",
-  "generator_sha256": "1793833ff73e83bb32ab21b6df9bc7d5abfea5725b6862906f221ebca7c49b74",
+  "generator_sha256": "414ca85c780d3102e0cfb9fdaa08f0fc6d95e12851039816a701a48c00d39c9a",
+  "style_sha256": "561aa137d9513791241c988f83c3be629c21e16bd34461bc1be19859e79a9da8",
   "inputs": {
     "evidence/task-domain-2026-10-03/results.json": "934244a2d849aa77b5cbafdea12b20ccf8971dc207c01a395ba509a7f9f85cf3",
     "evidence/task-observation-qualification-2026-10-04/results.json": "36e17f307ac318b1e15eee73feff4ebcd134848162722d3ac2d51e65011c06f5"
   },
   "outputs": {
+    "component-agreement.caption.md": "1e30507ff0c103d9c30a348de563e1dc522b7aad1ce80445a430c2c759794159",
     "component-agreement.csv": "495dd0321ed7d4e07028016dc0e4fba5895fd4371cbb033697ea58c65f6248a7",
-    "component-agreement.png": "26edbfc3f60d89158ef64623a02a8bbd7103f469cce83d56a82b62f2cb28dbb8",
-    "component-agreement.svg": "38f89af9a7cbb7ce3347147cc47a4d88dd8fefc985e36851eb1671b8b79439b3",
+    "component-agreement.png": "5f8e69ae605593211d7ade0065a4c01e4129ec645803b81ef4046e8945f831cf",
+    "component-agreement.svg": "775821c6159bd5860cc403e23111eee02461eb927546d81700c2165cb87f3def",
+    "datalink-observations.caption.md": "408920c95348b1c05d8477acb084191539c72a39a4ce5b02027e3daef9de6133",
     "datalink-observations.csv": "a9a77f28fa877ea42e2940863c214477b9d46eadb559c767175323ca7a7c0d0f",
-    "datalink-observations.png": "b48215a2dd85c86e48a75f901865afa24675ce542852d09b5529f8c66e92e3fa",
-    "datalink-observations.svg": "734c9a4c6f22b3cc18055c45c515300897318ae336c2dcbff5b8771dca75730e",
+    "datalink-observations.png": "91b3f1a4a517cee9deb4747e0a39cf7fb1abd47978992e482060635c403c9afc",
+    "datalink-observations.svg": "17043423707e1b3aaa52387cb908c55d204e453e7a5571e9c7232163acf31c1c",
     "tables.md": "56777869f4d7ef1bdbedb58b4a054ecc6be26b49a903f20c9ac9e850cb28e7cb"
   },
   "evidence": "existing component comparisons and instrumented runtime development observations",
-  "reference_commit": "bad572fc0902437445a5446bb5bc43098cc6211f"
+  "style_reference": "https://github.com/500ft/evidence-sufficiency-benchmark/pull/26"
 }
