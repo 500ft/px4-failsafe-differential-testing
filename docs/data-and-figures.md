@@ -11,8 +11,8 @@ The original conceptual diagrams are removed from the working tree. The
 
 | Summary | Input and evidence status | Editable generator / output |
 | --- | --- | --- |
-| Sequence agreement by phase | Committed [component counts](../evidence/task-domain-2026-10-03/results.json); declared-domain comparison | [Generator](../scripts/plot_retained_results.py), [PNG](../results/figures/component-agreement.png), [SVG](../results/figures/component-agreement.svg) |
-| Datalink event observations | Committed [runtime result](../evidence/task-observation-qualification-2026-10-04/results.json); one instrumented SIH development run | Same generator, [PNG](../results/figures/datalink-observations.png), [SVG](../results/figures/datalink-observations.svg) |
+| Sequence agreement by phase | Committed [component counts](../evidence/task-domain-2026-10-03/results.json); declared-domain comparison | [Generator](../scripts/plot_retained_results.py), [PNG](../results/figures/component-agreement.png), [SVG](../results/figures/component-agreement.svg), [caption](../results/figures/component-agreement.caption.md) |
+| Datalink event observations | Committed [runtime result](../evidence/task-observation-qualification-2026-10-04/results.json); one instrumented SIH development run | Same generator, [PNG](../results/figures/datalink-observations.png), [SVG](../results/figures/datalink-observations.svg), [caption](../results/figures/datalink-observations.caption.md) |
 | Accessible result tables | Derived views of those same JSON records, with integer counts and clock units | [Markdown and CSV links](../results/figures/tables.md) |
 
 Use an environment with Matplotlib (the rendered version is in the
@@ -23,15 +23,21 @@ python scripts/plot_retained_results.py
 ```
 
 The generator only reads committed aggregate results. It writes figures,
-downloadable tables and input/output hashes. It does not execute the model,
+their caption files, downloadable tables and input/output hashes. It does not execute the model,
 autopilot, raw-log extraction or reserved cases. Repository validation still
 uses the existing dependency set; Matplotlib is only needed to redraw figures.
 
-The visual reference is the owner's enclosure [bias generator](https://github.com/500ft/sensor-enclosure-thermal-design/blob/bad572fc0902437445a5446bb5bc43098cc6211f/analysis/thermal_bias.py)
-and its rendered bias/transient figures at that commit. White panels, explicit
-units, restrained grids and marker/hatch redundancy carry over. Different
-component sample counts use explicitly labeled axes; runtime events use a
-single clock. Neither summary invents uncertainty bands.
+The figures follow the owner-approved figure rules from
+[evidence-sufficiency-benchmark PR #26](https://github.com/500ft/evidence-sufficiency-benchmark/pull/26),
+applied here on owner instruction. The canvas holds only data,
+axes, panel letters and one framed legend, in black on white with Computer
+Modern type. Fill carries state and marker shape carries the kind of stamp.
+Titles, notes and values move to `<stem>.caption.md`, which the result guides
+repeat under each image. [`figure_style.py`](../scripts/figure_style.py) refuses
+to save a figure whose printed items touch, and
+`tests/test_retained_figures.py` checks the plotted values and captions when
+Matplotlib is installed. Component sample counts use separate labeled axes;
+runtime events use a single clock. Neither summary invents uncertainty bands.
 
 ## Inventory and retained material
 
