@@ -22,9 +22,9 @@ Deployment code remains in that separate repository.
 | --- | --- | --- | --- |
 | Done, scoped | Preserve Python/native failsafe comparison and runtime observations | Pinned source, declared inputs and retained raw records | [Result index](results/README.md), including corpus exclusions and reproduction commands |
 | Done, successor | Numerical filter qualification | Explicit state/reset/dt semantics, units, types, domain and derived error bounds before comparisons | [Successor result](https://github.com/500ft/control-code-verification/blob/main/evidence/results.json) and its registered specification; development agreement only |
-| Done, successor | Publish source and reproduce in CI | Reviewed tracked history and pinned dependencies | [Public source](https://github.com/500ft/control-code-verification) and [executed hosted reproduction](https://github.com/500ft/control-code-verification/actions/runs/37854170219); workflow under PR review |
+| Done, successor | Publish source and reproduce in CI | Reviewed tracked history and pinned dependencies | [Public source](https://github.com/500ft/control-code-verification) and [executed hosted reproduction](https://github.com/500ft/control-code-verification/actions/runs/37854170219); workflow merged in control-code-verification #1 |
 | Current, owner-blocked | Decide old-study disposition | Owner release/closure choice | Recorded decision followed by the authorized action; neither has occurred |
-| Current, successor-blocked | Review functional branch requirements | Assigned second reviewer and the recorded threshold-uncertainty cases | Reviewed branch-use requirements before an integration wrapper is qualified |
+| Current, successor-blocked | Review functional branch requirements | Assigned second reviewer and the recorded threshold-uncertainty cases | Reviewed branch-use requirements before an integration wrapper is qualified. Requirements adopted in the successor's [CONSUMER.md](https://github.com/500ft/control-code-verification/blob/main/CONSUMER.md) (control-code-verification #7 and #8); second-reviewer sign-off and wrapper qualification stay open in its roadmap |
 
 ## Conditional successor order
 
